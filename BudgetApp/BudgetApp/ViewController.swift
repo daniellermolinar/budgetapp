@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    var player: AVAudioPlayer!
     var checkings:Double = 0;
     var savings:Double = 0;
     var utilities:Double = 0;
@@ -119,6 +121,7 @@ class ViewController: UIViewController {
         checkingsLeft.isHidden = false
         billsSpent.isHidden = false
         (sender as! UIButton).isHidden = true
+        player.play()
     }
     
     
@@ -189,6 +192,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let path = Bundle.main.path(forResource: "cash", ofType: "mp3")!
+        let url = URL(fileURLWithPath: path)
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player.prepareToPlay()
+        } catch let error as NSError {
+            print(error.description)
+        }
     }
 
     override func didReceiveMemoryWarning() {

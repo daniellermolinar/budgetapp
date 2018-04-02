@@ -14,6 +14,7 @@
 		F66F2D602071E14A0034DE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66F2D5E2071E14A0034DE13 /* LaunchScreen.storyboard */; };
 		F66F2D6B2071E14A0034DE13 /* BudgetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F2D6A2071E14A0034DE13 /* BudgetAppTests.swift */; };
 		F66F2D762071E14A0034DE13 /* BudgetAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F2D752071E14A0034DE13 /* BudgetAppUITests.swift */; };
+		F6DF22E42072B69F0051855C /* cash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6DF22E32072B69F0051855C /* cash.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F66F2D712071E14A0034DE13 /* BudgetAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66F2D752071E14A0034DE13 /* BudgetAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetAppUITests.swift; sourceTree = "<group>"; };
 		F66F2D772071E14A0034DE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DF22E32072B69F0051855C /* cash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cash.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		F66F2D542071E14A0034DE13 /* BudgetApp */ = {
 			isa = PBXGroup;
 			children = (
+				F6DF22E32072B69F0051855C /* cash.mp3 */,
 				F66F2D552071E14A0034DE13 /* AppDelegate.swift */,
 				F66F2D572071E14A0034DE13 /* ViewController.swift */,
 				F66F2D592071E14A0034DE13 /* Main.storyboard */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66F2D602071E14A0034DE13 /* LaunchScreen.storyboard in Resources */,
+				F6DF22E42072B69F0051855C /* cash.mp3 in Resources */,
 				F66F2D5D2071E14A0034DE13 /* Assets.xcassets in Resources */,
 				F66F2D5B2071E14A0034DE13 /* Main.storyboard in Resources */,
 			);
