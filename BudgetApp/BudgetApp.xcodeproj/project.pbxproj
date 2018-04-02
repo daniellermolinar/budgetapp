@@ -14,7 +14,6 @@
 		F66F2D602071E14A0034DE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66F2D5E2071E14A0034DE13 /* LaunchScreen.storyboard */; };
 		F66F2D6B2071E14A0034DE13 /* BudgetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F2D6A2071E14A0034DE13 /* BudgetAppTests.swift */; };
 		F66F2D762071E14A0034DE13 /* BudgetAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F2D752071E14A0034DE13 /* BudgetAppUITests.swift */; };
-		F684F6D42071F54C002B35A6 /* copy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F684F6D32071F54C002B35A6 /* copy.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		F66F2D712071E14A0034DE13 /* BudgetAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66F2D752071E14A0034DE13 /* BudgetAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetAppUITests.swift; sourceTree = "<group>"; };
 		F66F2D772071E14A0034DE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F684F6D32071F54C002B35A6 /* copy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = copy.storyboard; path = ../../copy.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 		F66F2D492071E14A0034DE13 = {
 			isa = PBXGroup;
 			children = (
-				F684F6D32071F54C002B35A6 /* copy.storyboard */,
 				F66F2D542071E14A0034DE13 /* BudgetApp */,
 				F66F2D692071E14A0034DE13 /* BudgetAppTests */,
 				F66F2D742071E14A0034DE13 /* BudgetAppUITests */,
@@ -236,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66F2D602071E14A0034DE13 /* LaunchScreen.storyboard in Resources */,
-				F684F6D42071F54C002B35A6 /* copy.storyboard in Resources */,
 				F66F2D5D2071E14A0034DE13 /* Assets.xcassets in Resources */,
 				F66F2D5B2071E14A0034DE13 /* Main.storyboard in Resources */,
 			);
