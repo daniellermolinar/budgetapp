@@ -90,6 +90,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var dollarTwo: UIImageView!
     
     
+    
+    @IBAction func music(_ sender: UISwitch) {
+        if sender.isOn {
+            player.play()
+        }else{
+            player.stop()
+        }
+    }
+    
     @IBAction func startButton(_ sender: Any) {
         dollar.isHidden = true
         coin.isHidden = true
@@ -121,7 +130,6 @@ class ViewController: UIViewController {
         checkingsLeft.isHidden = false
         billsSpent.isHidden = false
         (sender as! UIButton).isHidden = true
-        player.play()
     }
     
     
@@ -192,7 +200,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let path = Bundle.main.path(forResource: "cash", ofType: "mp3")!
+        let path = Bundle.main.path(forResource: "rain", ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
         do {
             player = try AVAudioPlayer(contentsOf: url)
@@ -200,6 +208,7 @@ class ViewController: UIViewController {
         } catch let error as NSError {
             print(error.description)
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
