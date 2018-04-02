@@ -258,14 +258,14 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IuF-DR-sFJ">
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IuF-DR-sFJ">
                                 <rect key="frame" x="315" y="618" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="music:" destination="BYZ-38-t0r" eventType="valueChanged" id="PY6-m1-RO7"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOh-XX-m76">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOh-XX-m76">
                                 <rect key="frame" x="316" y="596" width="51" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -292,6 +292,7 @@
                         <outlet property="membershipsLabel" destination="hKK-qB-XR4" id="Lqp-Wq-4Gd"/>
                         <outlet property="message" destination="6oo-ih-OeO" id="b8v-5g-TpN"/>
                         <outlet property="musicLabel" destination="AOh-XX-m76" id="Icl-mu-JJ1"/>
+                        <outlet property="musicSwitch" destination="IuF-DR-sFJ" id="kNr-ca-zzm"/>
                         <outlet property="myCar" destination="Fti-1N-bFd" id="ujL-Xs-NHw"/>
                         <outlet property="myCheckings" destination="NyM-Gn-zOJ" id="wDs-e2-UkA"/>
                         <outlet property="myEntertainment" destination="3Av-zp-f24" id="dtr-E3-tj8"/>

@@ -91,6 +91,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var musicLabel: UILabel!
     
+    @IBOutlet weak var musicSwitch: UISwitch!
+    
     @IBAction func music(_ sender: UISwitch) {
         let path = Bundle.main.path(forResource: "rain", ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
@@ -137,7 +139,10 @@ class ViewController: UIViewController {
         entertainmentLabel.isHidden = false
         otherLabel.isHidden = false
         checkingsLeft.isHidden = false
-        billsSpent.isHidden = false        
+        billsSpent.isHidden = false
+        musicSwitch.isHidden = false
+        musicLabel.isHidden = false
+        
         (sender as! UIButton).isHidden = true
         
         let path = Bundle.main.path(forResource: "cash", ofType: "mp3")!
