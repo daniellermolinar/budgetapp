@@ -89,9 +89,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dollarTwo: UIImageView!
     
-    
+    @IBOutlet weak var musicLabel: UILabel!
     
     @IBAction func music(_ sender: UISwitch) {
+        let path = Bundle.main.path(forResource: "rain", ofType: "mp3")!
+        let url = URL(fileURLWithPath: path)
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player.prepareToPlay()
+        } catch let error as NSError {
+            print(error.description)
+        }
+        
         if sender.isOn {
             player.play()
         }else{
@@ -128,8 +137,19 @@ class ViewController: UIViewController {
         entertainmentLabel.isHidden = false
         otherLabel.isHidden = false
         checkingsLeft.isHidden = false
-        billsSpent.isHidden = false
+        billsSpent.isHidden = false        
         (sender as! UIButton).isHidden = true
+        
+        let path = Bundle.main.path(forResource: "cash", ofType: "mp3")!
+        let url = URL(fileURLWithPath: path)
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player.prepareToPlay()
+        } catch let error as NSError {
+            print(error.description)
+        }
+        player.play()
+        
     }
     
     
@@ -200,14 +220,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let path = Bundle.main.path(forResource: "rain", ofType: "mp3")!
-        let url = URL(fileURLWithPath: path)
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            player.prepareToPlay()
-        } catch let error as NSError {
-            print(error.description)
-        }
         
     }
 

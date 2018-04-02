@@ -291,6 +291,7 @@
                         <outlet property="insuranceLabel" destination="Hdk-D2-ZYD" id="JAP-oD-evn"/>
                         <outlet property="membershipsLabel" destination="hKK-qB-XR4" id="Lqp-Wq-4Gd"/>
                         <outlet property="message" destination="6oo-ih-OeO" id="b8v-5g-TpN"/>
+                        <outlet property="musicLabel" destination="AOh-XX-m76" id="Icl-mu-JJ1"/>
                         <outlet property="myCar" destination="Fti-1N-bFd" id="ujL-Xs-NHw"/>
                         <outlet property="myCheckings" destination="NyM-Gn-zOJ" id="wDs-e2-UkA"/>
                         <outlet property="myEntertainment" destination="3Av-zp-f24" id="dtr-E3-tj8"/>
