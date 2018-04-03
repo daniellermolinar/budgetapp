@@ -94,7 +94,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var musicSwitch: UISwitch!
     
     @IBAction func music(_ sender: UISwitch) {
-        let path = Bundle.main.path(forResource: "rain", ofType: "mp3")!
+        let path = Bundle.main.path(forResource: "craves", ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
         do {
             player = try AVAudioPlayer(contentsOf: url)
